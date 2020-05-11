@@ -6,6 +6,7 @@
 
 This is the underlying database for the Salon Small business web application.
 
+### Drop and Create Database
 
 ```
 USE master;
