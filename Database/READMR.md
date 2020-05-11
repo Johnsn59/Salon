@@ -4,6 +4,8 @@
 
 ![Phsical Database Design](SalonPhysicalDatabase.png)
 
+This is the underlying database for the Salon Small business web application.
+
 
 ```
 USE master;
