@@ -1,5 +1,11 @@
 # Salon Database
 
+## Phsical Database Design
+
+Images
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
 Headers
 # This is an <h1> tag
 ## This is an <h2> tag
