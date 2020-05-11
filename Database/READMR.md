@@ -19,6 +19,12 @@ GO
 
 USE Salon;
 GO
+
+CREATE SCHEMA Products AUTHORIZATION dbo;
+GO
+CREATE SCHEMA Sales AUTHORIZATION dbo;
+GO
+
 ```
 ```
 
