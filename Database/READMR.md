@@ -2,7 +2,7 @@
 
 ## Phsical Database Design
 
-![Phsical Database Design](SalonPhysicalDesign.png)
+![Phsical Database Design](SalonPhysicalDatabase.png)
 
 Images
 Format: ![Alt Text](url)
