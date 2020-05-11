@@ -4,6 +4,23 @@
 
 ![Phsical Database Design](SalonPhysicalDatabase.png)
 
+
+```
+USE master;
+GO
+
+DROP DATABASE IF EXISTS Salon;
+
+CREATE DATABASE Salon;
+GO
+
+USE Salon;
+GO
+```
+```
+
+```
+
 Images
 Format: ![Alt Text](url)
 
