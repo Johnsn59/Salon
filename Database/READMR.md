@@ -2,8 +2,9 @@
 
 ## Phsical Database Design
 
+![Phsical Database Design](/images/logo.png)
+
 Images
-![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
 
 Headers
