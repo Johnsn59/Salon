@@ -3,7 +3,7 @@
 ## Phsical Database Design
 <hr>
 
-[Physical Design](PhysicalDatabase.md)
+[Physical Design](PhysicalDesign.md)
 
 <hr>
 ### Drop and Create Database
