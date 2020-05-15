@@ -1,9 +1,9 @@
 # Salon Database
 
 ## Phsical Database Design
-
+<hr>
 [Physical Design](SalonPhysicalDatabase.png)
-
+<hr>
 ### Drop and Create Database
 
 ```sql
