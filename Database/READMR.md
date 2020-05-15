@@ -2,7 +2,9 @@
 
 ## Phsical Database Design
 <hr>
-[Physical Design](SalonPhysicalDatabase.png)
+
+[Physical Design](PhysicalDatabase.md)
+
 <hr>
 ### Drop and Create Database
 
