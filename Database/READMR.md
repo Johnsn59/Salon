@@ -2,6 +2,7 @@
 
 ## Phsical Database Design
 
+[Physical Design](SalonPhysicalDatabase.png)
 ![Phsical Database Design](SalonPhysicalDatabase.png)
 
 This is the underlying database for the Salon Small business web application.
