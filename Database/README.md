@@ -26,7 +26,34 @@ CREATE SCHEMA Sales AUTHORIZATION dbo;
 GO
 
 ```
-```
+### Customers Table
+```sql
+CREATE TABLE Sales.Customers
+(
+	CustID			INT				NOT NULL IDENTITY,
+	CustomerName	NVARCHAR(50)	NOT NULL,
+	PhoneNumber		NVARCHAR(24)	NOT NULL,
+	BirthDate		DATE			NULL, 
+	StreetAddress	NVARCHAR(50)	NOT NULL,
+	City			NVARCHAR(50)	NOT NULL,
+	Region			NVARCHAR(50)	NULL,
+	ZipCode			INT				NOT NULL,
+	Country			NVARCHAR(50)	NOT NULL,
+	Email			NVARCHAR(50)	NOT NULL,
+	Password		NVARCHAR(50)	NOT NULL,
+
+ CONSTRAINT PK_Customers PRIMARY KEY (CustID), 
+ CONSTRAINT UC_Email UNIQUE (Email),
+ ) 
+GO
+
+CREATE NONCLUSTERED INDEX idx_nc_City     
+	ON Sales.Customers(City);
+CREATE NONCLUSTERED INDEX idx_nc_ZipCode  
+	ON Sales.Customers(ZipCode);
+
+INSERT INTO Sales.Customers(Email, Password, CustomerName, PhoneNumber, BirthDate, StreetAddress, City, Region, ZipCode, Country)
+  VALUES(N'SaraDavis@hotmail.com', N'939685843', N'Davis, Sara', N'(206) 555-0101', '19681208', N'7890 - 20th Ave. E., Apt. 2A', N'Seattle', N'WA', 10003, N'USA');
 
 ```
 
