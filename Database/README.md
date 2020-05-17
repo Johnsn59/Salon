@@ -61,15 +61,15 @@ INSERT INTO Sales.Customers(Email, Password, CustomerName, PhoneNumber, BirthDat
 ```sql
 CREATE TABLE Sales.CustomerPayment
 (
-	PayID				INT				NOT NULL IDENTITY,
-	CustID				INT				NOT NULL,
+	PayID				INT		NOT NULL IDENTITY,
+	CustID				INT		NOT NULL,
 	CardType			NVARCHAR(50)	NULL,
-	FinancalInstitusion NVARCHAR(50)	NOT NULL,
-	AccountNumber		INT				NOT NULL,
-	BillingAddress		NVARCHAR(50)	NOT NULL,
+	FinancalInstitusion 		NVARCHAR(50)	NOT NULL,
+	AccountNumber			INT		NOT NULL,
+	BillingAddress			NVARCHAR(50)	NOT NULL,
 	City				NVARCHAR(50)	NOT NULL,
 	Region				NVARCHAR(50)	NULL,
-	ZipCode				INT				NOT NULL,
+	ZipCode				INT		NOT NULL,
 	Country				NVARCHAR(50)	NOT NULL,
 
  CONSTRAINT PK_CustomerPayment PRIMARY KEY (PayID),
