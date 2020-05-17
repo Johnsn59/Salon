@@ -240,31 +240,3 @@ INSERT INTO Sales.OrderDetails(OrderID, ProductID, UnitPrice, Qty, Discount, Shi
   VALUES(4, 31, 23.00, 1, 0.00, N'7890 - 20th Ave. E., Apt. 2A', N'Seattle', N'WA', 10003, N'USA');
 
 ```
-
-Images
-Format: ![Alt Text](url)
-
-Headers
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-  
-Emphasis
-*This text will be italic*
-_This will also be italic_
-**This text will be bold**
-__This will also be bold__
-_You **can** combine them_
-
-Lists
-Unordered
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-Ordered
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
