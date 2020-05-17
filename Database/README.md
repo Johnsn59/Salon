@@ -85,38 +85,6 @@ INSERT INTO Sales.CustomerPayment(CustID, CardType, FinancalInstitusion, Account
   VALUES(1, N'VISA', N'Wells Fargo', 63584219, N'7890 - 20th Ave. E., Apt. 2A', N'Seattle', N'WA', 10003, N'USA');
 
 ```
-### Orders Table
-```sql
-CREATE TABLE Sales.Orders
-(
-	OrderID		INT	NOT NULL IDENTITY,
-	CustID		INT	NOT NULL,
-	PayID		INT	NOT NULL,
-	OrderDate	DATE	NOT NULL,
-	ShippedDate	DATE	NULL,
-	Freight		MONEY	NOT NULL
-		CONSTRAINT DFT_Orders_Freight DEFAULT(0),
-
- CONSTRAINT PK_Orders PRIMARY KEY (OrderID),
- CONSTRAINT FK_Orders_Customers FOREIGN KEY (CustID)
-    REFERENCES Sales.Customers (CustID),
- CONSTRAINT FK_Orders_CustomerPayment FOREIGN KEY (PayID)
-    REFERENCES Sales.CustomerPayment (PayID),
- CONSTRAINT CHK_OrderDate CHECK(OrderDate <= CAST(SYSDATETIME() AS DATE))
-)
-GO
-
-CREATE NONCLUSTERED INDEX idx_nc_CustID         
-	ON Sales.Orders(CustID);
-CREATE NONCLUSTERED INDEX idx_nc_OrderDate      
-	ON Sales.Orders(OrderDate);
-CREATE NONCLUSTERED INDEX idx_nc_ShippedDate    
-	ON Sales.Orders(ShippedDate);
-
-INSERT INTO Sales.Orders(CustID, PayID, OrderDate, ShippedDate, Freight)
-  VALUES(1, 1, '20190621', '20190705', 70.00);
-  
-```
 ### Product Categories Table
 ```sql
 CREATE TABLE Products.Categories
@@ -193,6 +161,38 @@ INSERT INTO Products.Product(SubCtgyID, CtgyID, ProductName, BrandName, unitpric
 INSERT INTO Products.Product(SubCtgyID, CtgyID, ProductName, BrandName, unitprice, Description, Discount)
   VALUES(4, 2, N'GrdeLMd', N'GRANDE COSMETICS', 65.00, N'Lash-MD Lash Enhancing', 0);	    
 
+```
+### Orders Table
+```sql
+CREATE TABLE Sales.Orders
+(
+	OrderID		INT	NOT NULL IDENTITY,
+	CustID		INT	NOT NULL,
+	PayID		INT	NOT NULL,
+	OrderDate	DATE	NOT NULL,
+	ShippedDate	DATE	NULL,
+	Freight		MONEY	NOT NULL
+		CONSTRAINT DFT_Orders_Freight DEFAULT(0),
+
+ CONSTRAINT PK_Orders PRIMARY KEY (OrderID),
+ CONSTRAINT FK_Orders_Customers FOREIGN KEY (CustID)
+    REFERENCES Sales.Customers (CustID),
+ CONSTRAINT FK_Orders_CustomerPayment FOREIGN KEY (PayID)
+    REFERENCES Sales.CustomerPayment (PayID),
+ CONSTRAINT CHK_OrderDate CHECK(OrderDate <= CAST(SYSDATETIME() AS DATE))
+)
+GO
+
+CREATE NONCLUSTERED INDEX idx_nc_CustID         
+	ON Sales.Orders(CustID);
+CREATE NONCLUSTERED INDEX idx_nc_OrderDate      
+	ON Sales.Orders(OrderDate);
+CREATE NONCLUSTERED INDEX idx_nc_ShippedDate    
+	ON Sales.Orders(ShippedDate);
+
+INSERT INTO Sales.Orders(CustID, PayID, OrderDate, ShippedDate, Freight)
+  VALUES(1, 1, '20190621', '20190705', 70.00);
+  
 ```
 ### Orders Details table
 ```sql
