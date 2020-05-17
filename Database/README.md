@@ -6,6 +6,7 @@
 [Physical Design](PhysicalDesign.md)
 
 <hr>
+
 ### Drop and Create Database
 
 ```sql
@@ -30,14 +31,14 @@ GO
 ```sql
 CREATE TABLE Sales.Customers
 (
-	CustID			INT				NOT NULL IDENTITY,
-	CustomerName	NVARCHAR(50)	NOT NULL,
+	CustID			INT		NOT NULL IDENTITY,
+	CustomerName		NVARCHAR(50)	NOT NULL,
 	PhoneNumber		NVARCHAR(24)	NOT NULL,
-	BirthDate		DATE			NULL, 
-	StreetAddress	NVARCHAR(50)	NOT NULL,
+	BirthDate		DATE		NULL, 
+	StreetAddress		NVARCHAR(50)	NOT NULL,
 	City			NVARCHAR(50)	NOT NULL,
 	Region			NVARCHAR(50)	NULL,
-	ZipCode			INT				NOT NULL,
+	ZipCode			INT		NOT NULL,
 	Country			NVARCHAR(50)	NOT NULL,
 	Email			NVARCHAR(50)	NOT NULL,
 	Password		NVARCHAR(50)	NOT NULL,
