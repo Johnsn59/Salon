@@ -1,4 +1,4 @@
 # Salon Wire Frames
 
 
-[Main Page](Main Page.md)
+[Main Page](MainPage.md)
