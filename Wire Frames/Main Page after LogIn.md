@@ -1,3 +1,3 @@
-# Main Page
+# Main Page after LogIn
 
-![Main Page](MainPage.jpg)
+![Main Page after LogIn](MainPageAfterLogIn.jpg)
