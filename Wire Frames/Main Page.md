@@ -1,3 +1,3 @@
 # Main Page
 
-[Main Page](Main Page.jpg)
+[Main Page](Wire Frames/Main Page.jpg)
