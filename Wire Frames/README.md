@@ -3,13 +3,13 @@
 [Main Page](MainPage.md)
 <hr>
 
-[Searching without logging In](SearchingWithoutLoggingIn.md)
-<hr>
-
 [Log In Page](LogInPage.md)
 <hr>
 
 [Main Page after Log In](MainPageAfterLogIn.md)
+<hr>
+
+[Searching without logging In](SearchingWithoutLoggingIn.md)
 <hr>
 
 [Searching After logging In](SearchingAfterLoggedIn.md)
