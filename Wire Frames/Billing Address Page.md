@@ -1,3 +1,3 @@
-# Main Page
+# Billing Address Page
 
-![Main Page](MainPage.jpg)
+![Billing Address Page](BillingAddressPage.jpg)
