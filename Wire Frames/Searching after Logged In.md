@@ -1,3 +1,3 @@
-# Main Page
+# Searching after Logged In
 
-![Main Page](MainPage.jpg)
+![Searching after Logged In](SearchingAfterLogIn.jpg)
