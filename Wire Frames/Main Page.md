@@ -1,3 +1,3 @@
 # Main Page
 
-![Main Page](MainPage.png)
+![Main Page](Main Page.png)
