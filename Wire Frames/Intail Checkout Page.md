@@ -1,3 +1,3 @@
-# Main Page
+# Intail Checkout Page
 
-![Main Page](MainPage.jpg)
+![Intail Checkout Page](IntailCheckoutPage.jpg)
