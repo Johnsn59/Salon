@@ -1,3 +1,3 @@
 # Seaching without Logging In
 
-![Seaching without Logging In](SeachingwithoutLoggingIn.jpg)
+![Seaching without Logging In](SeachingwithoutLogingIn.jpg)
