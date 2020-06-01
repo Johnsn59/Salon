@@ -1,3 +1,3 @@
-# Main Page
+# Individual Product Page
 
-![Main Page](MainPage.jpg)
+![Individual Product Page](IndividualProductPage.jpg)
