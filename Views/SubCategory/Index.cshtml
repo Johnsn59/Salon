@@ -1,0 +1,10 @@
+﻿@model IQueryable<SubCategory>
+
+<div class="text-center">
+    @foreach (SubCategory sc in Model)
+    {
+        <h3> <a asp-controller="SubCategory" asp-action="Detail" asp-route-id="@sc.SubCategoryID"> @sc.Name </a>  </h3>
+        @sc.Description
+        <hr />
+    }
+</div>

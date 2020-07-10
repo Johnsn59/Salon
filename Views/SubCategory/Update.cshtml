@@ -1,0 +1,22 @@
+﻿@model SubCategory
+
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="SubCategoryID" />
+    <table>
+        <tr>
+            <th> Sub Category Name: </th>
+            <td> <input asp-for="Name" /> </td>
+        </tr>
+        <tr>
+            <th> Description: </th>
+            <td> <input asp-for="Description" /> </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td> <input type="submit" value="Update SubCategory Information" asp-for-id="SubCategoryID" /></td>
+        </tr>
+    </table>
+    <button asp-controller="SubCategory" asp-action="Index" class="badge badge-danger">
+        Cancel
+    </button>
+</form>

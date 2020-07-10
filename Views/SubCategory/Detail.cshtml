@@ -1,0 +1,52 @@
+﻿@model SubCategory
+@*@Html.Partial("ProductSummary", Model)*@
+@*<partial name="ProductSummary" />*@
+
+<form>
+    <h3> Sub Categories </h3>
+    <hr />
+    <table>
+        <tr>
+            <th> Name: </th>
+            <td> @Model.Name </td>
+        </tr>
+        <tr>
+            <th> Description: </th>
+            <td> @Model.Description </td>
+        </tr>
+        <tr>
+            <th> </th>
+            <td>
+                <button asp-controller="SubCategory" asp-action="Update" asp-route-id="@Model.SubCategoryID" class="badge badge-secondary"> Edit </button>
+                <button asp-controller="SubCategory" asp-action="Index" class="badge badge-primary"> Home </button>
+                <button asp-action="Delete" asp-route-id="@Model.SubCategoryID" class="badge badge-danger"> Delete &#x1F5D1 </button>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <h3> Products </h3>
+    <form>
+        <button asp-controller="Product" asp-action="Add" formmethod="get" asp-route-id="@Model.SubCategoryID" style="float:right">
+            Create New Product
+        </button>
+    </form>
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Brand Name</th>
+            <th> Description </th>
+            <th> Price </th>
+            <th> Discount </th>
+        </tr>
+        @foreach (Product p in Model.Products)
+        {
+            <tr>
+                <td> @p.ProductName </td>
+                <td> @p.BrandName </td>
+                <td> @p.Description </td>
+                <td> @p.UnitPrice.ToString("c") </td>
+                <td> @p.Discount.ToString("c") </td>
+            </tr>
+        }
+    </table>
+</form>

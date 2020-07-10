@@ -1,0 +1,35 @@
+﻿@model Product
+
+    <form asp-action="Update" method="post">
+        <input type="hidden" asp-for="ProductID" />
+        <input type="hidden" asp-for="SubCategoryID" />
+        <table>
+            <tr>
+                <th> Product Name: </th>
+                <td> <input asp-for="ProductName" /> </td>
+            </tr>
+            <tr>
+                <th> Brand Name: </th>
+                <td> <input asp-for="BrandName" /> </td>
+            </tr>
+            <tr>
+                <th> Description: </th>
+                <td> <input asp-for="Description" /> </td>
+            </tr>
+            <tr>
+                <th> Price: </th>
+                <td> <input asp-for="UnitPrice" /> </td>
+            </tr>
+            <tr>
+                <th> Discount: </th>
+                <td> <input asp-for="Discount" /> </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td> <input type="submit" value="Update Product Information" asp-for-id="ProductID" /></td>
+            </tr>
+        </table>
+        <button asp-action="Index" class="badge badge-danger">
+            Cancel
+        </button>
+    </form>

@@ -1,0 +1,12 @@
+﻿@model IQueryable<Product>
+
+<div class="text-center">
+    @foreach (Product p in Model)
+    {
+        <h3> <a asp-controller="Product" asp-action="Detail" asp-route-id="@p.ProductID"> @p.ProductName </a>  </h3>
+        <h3> @p.BrandName  </h3>
+        @p.Description
+        <h4> @p.UnitPrice.ToString("c") </h4>
+        <hr />
+    }
+</div>

@@ -1,0 +1,40 @@
+﻿@model Product
+
+@*@Html.Partial("ProductSummary", Model)*@
+
+@*<partial name="ProductSummary" />*@
+
+<form>
+    <h3> Product </h3>
+    <hr />
+    <table>
+        <tr>
+            <th> Product Names </th>
+            <td> @Model.ProductName </td>
+        </tr>
+        <tr>
+            <th> Brand Name </th>
+            <td> @Model.BrandName </td>
+        </tr>
+        <tr>
+            <th> Description </th>
+            <td> @Model.Description </td>
+        </tr>
+        <tr>
+            <th> Price </th>
+            <td> @Model.UnitPrice.ToString("c") </td>
+        </tr>
+        <tr>
+            <th> Discount </th>
+            <td> @Model.Discount.ToString("c") </td>
+        </tr>
+        <tr>
+            <th> </th>
+            <td>
+                <button asp-controller="Product" asp-action="Update" asp-route-id="@Model.ProductID" class="badge badge-secondary"> Edit </button>
+                <button asp-controller="Product" asp-action="Index" class="badge badge-primary"> Home </button>
+                <button asp-action="Delete" asp-route-id="@Model.ProductID" class="badge badge-danger"> Delete &#x1F5D1 </button>
+            </td>
+        </tr>
+    </table>
+</form>
